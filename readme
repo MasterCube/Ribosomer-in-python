@@ -1,15 +1,15 @@
 PhD thesis in computational biology.
 ************************************
 This repository is one of the two legacies of my PhD thesis. The PhD thesis has two deliverables that are open to 
-the scientific community studying translation by ribosomes. The first deliverable is an instance of an agent-based 
-model (ABM) of protein synthesis by a pool of ribosomes acting on a set of transcripts.
+the scientific community studying translation by ribosomes. The first deliverable attached to this GitHub repository 
+is an instance of an agent-based model (ABM) of protein synthesis by a pool of ribosomes acting on a set of transcripts.
 
-To have an overall introduction to the functions and motivations of these simulation tools, the reader is 
+To have an overall introduction to the functions and motivations of this simulation tool, the reader is 
 invited to read the PhD thesis attached in this repository and entitled 'Protein synthesis by ribosomes, an 
 agent-based model of mRNA translation rate incorporating tRNA modifications effects'.
 
 This repository contains all the directories and files that are necessary to conduct protein synthesis simulation by a pool 
-of ribosomes on any transcriptome set that you provide as data input.
+of ribosomes on any transcriptome set that the user can provide as data input.
 
 This instance of the agent-based model is meant to be used on a high performance cluster (HPC) to carry out thousands of
 embarassingly parallel simulations. The aim is to conduct parametric simulations and assess the sensitivity and uncertainty
