@@ -3,6 +3,7 @@ PhD thesis in computational biology.
 This repository is one of the two legacies of my PhD thesis. The PhD thesis has two deliverables that are open to 
 the scientific community studying translation by ribosomes. The first deliverable attached to this GitHub repository 
 is an instance of an agent-based model (ABM) of protein synthesis by a pool of ribosomes acting on a set of transcripts.
+This first instance was developed in Python.
 
 To have an overall introduction to the functions and motivations of this simulation tool, the reader is 
 invited to read the PhD thesis attached in this repository and entitled 'Protein synthesis by ribosomes, an 
