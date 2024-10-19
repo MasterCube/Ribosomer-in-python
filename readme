@@ -18,11 +18,32 @@ MyData directory:
 ----------------
 The directory 'MyData' contains files that are used as input of the program simulating protein synthesis by ribosomes.
 
-# transcriptome data:
---------------------
-The transcriptome data is a fasta file. The file CDSfasta01.txt contains a list of arbitrarily chosen transcripts (mRNA) 
-sequences with their metadata that can be provided by the user. This file is used as input data in the 'Ribosomer' agent-based model to provide the 
-codons sequences of each transcript that will be used for the protein synthesis simulations.
+  # transcriptome data:
+  --------------------
+  The transcriptome data is a fasta file. The file CDSfasta01.txt contains a list of arbitrarily chosen transcripts (mRNA) 
+  sequences with their metadata that can be provided by the user. This file is used as input data in the 'Ribosomer' agent-based model to provide the 
+  codons sequences of each transcript that will be used for the protein synthesis simulations.
+
+  # dataJSONyeast.json:
+  ---------------------
+  This .json file provides the kinetic parameters that are used throughout a simulation for the elongation process 
+  of protein synthesis by ribosomes at codon resolution. An elongation cycle of a ribosome on a given codon has 
+  3 substeps: 
+  1) accommodation of a loaded-tRNA and proofreading (of anticodon to codon) at the A-site.
+  2) peptide bond formation of the amino-acid at the A-site with the carboxy-terminal amino-acid at the P-site.
+  3) transocation of the ribosome to the next codon.
+
+  Each of this sub-step can be approximated by a first-order kinetics law. 
+  Each sub-step has a rate that is inherently dependent on the nature of the codon. The 'dataJSONyeast.json' file is
+  a dictionnary with 61 keys - the 61 sense codons, and 3 rates per key - one rate for each of the elongation sub-step.
+  The calibration of this dictionary is species dependent and this one is for yeast - Saccharomyces cerevisiae. 
+  The rate values for each key were derived from the metadata analysis published by Tuller et al.
+
+  # tunnelElectrostaticsAF.json:
+  -----------------------------
+  This .json file provides the profile of the axial forces applied in the charged amino acids of the peptide 
+  nascent chain embedded in the ribosome exit tunnel. The profile was calibrated from the electrostatic 
+  potential profile modeled in our paper.
 
 MyInput directory:
 -----------------
