@@ -17,8 +17,17 @@ that result from the stochastic behavior of mRNA translation and protein elongat
 MyData directory:
 ----------------
 The directory 'MyData' contains files that are used as input of the program simulating protein synthesis by ribosomes.
-transcriptome data:
-------------------
+
+# transcriptome data:
+--------------------
 The transcriptome data is a fasta file. The file CDSfasta01.txt contains a list of arbitrarily chosen transcripts (mRNA) 
 sequences with their metadata that can be provided by the user. This file is used as input data in the 'Ribosomer' agent-based model to provide the 
 codons sequences of each transcript that will be used for the protein synthesis simulations.
+
+MyInput directory:
+-----------------
+The directory 'MyInput' contains instances of input files that are used to provide information on 
+RNA-seq relative abundance and on the relative fold-change in initiation rates of each transcript 
+in the transcriptomic set of interest. These input information are used throughout the simulations runs. 
+Different input files can be used to compare the effects of a change in transcripts relative abundance or 
+the effects of a change in initiation rates while keeping the transcripts abundance constant.
