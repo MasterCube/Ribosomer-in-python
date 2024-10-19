@@ -62,6 +62,6 @@ MyInput directory:
 -----------------
 The directory 'MyInput' contains instances of input files that are used to provide information on 
 RNA-seq relative abundance and on the relative fold-change in initiation rates of each transcript 
-in the transcriptomic set of interest. These input information are used throughout the simulations runs. 
+in the transcriptomic set of interest. These input pieces of information are used throughout the simulations runs. 
 Different input files can be used to compare the effects of a change in transcripts relative abundance or 
 the effects of a change in initiation rates while keeping the transcripts abundance constant.
