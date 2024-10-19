@@ -20,5 +20,5 @@ The directory 'MyData' contains files that are used as input of the program simu
 transcriptome data:
 ------------------
 The transcriptome data is a fasta file. The file CDSfasta01.txt contains a list of arbitrarily chosen transcripts (mRNA) 
-sequences with their metadata. This file is used as input data in the 'Ribosomer' agent-based model to provide the 
+sequences with their metadata that can be provided by the user. This file is used as input data in the 'Ribosomer' agent-based model to provide the 
 codons sequences of each transcript that will be used for the protein synthesis simulations.
