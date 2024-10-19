@@ -1,0 +1,19 @@
+Voici les infos pour créer un environnement virtuel:
+
+## Dans ton terminal
+
+module load Python/3.9.6
+
+# Créer un environnement virtuel
+python -m venv test
+# Installer les packages
+source test/bin/activate
+python -m pip install scipy biopython suffix-trees
+
+
+## Dans le script slurm
+
+module load Python/3.9.6
+# Activer l'environnement virtuel
+source $MYENVDIR/bin/activate
+which python >> $HOME/test/bin/python
