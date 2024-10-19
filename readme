@@ -1,3 +1,6 @@
-input data
+MyData directory:
+----------------
+The directory 'MyData' contains files that are used as input of the program simulating protein synthesis by ribosomes.
+input data:
 ----------
-The input data is a fasta file.
+The input data is a fasta file. The file CDSfasta01.txt contains a list of arbitrarily chosen transcripts (mRNA) sequences with their metadata.
